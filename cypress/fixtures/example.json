@@ -1,0 +1,8 @@
+{
+  "name": "bobo",
+  "email": "bobo@gmail.com",
+  "password": "bobo@1234",
+  "gender": "Male",
+  "body": "Fixtures are a great way to mock data for responses to routes",
+  "productName": ["iphone","Blackberry","Nokia"]
+}
