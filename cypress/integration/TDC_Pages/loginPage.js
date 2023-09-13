@@ -15,7 +15,10 @@ class LoginPage{
     getCloseIconButton(){
         return cy.get('.close-icon')
     }
-
+    
+    getPageTitle(){
+        return cy.contains('Log in to get started')
+    }
 }
 
 export default LoginPage;
