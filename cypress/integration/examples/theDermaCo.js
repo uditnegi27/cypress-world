@@ -169,7 +169,7 @@ describe('Learning test cases', ()=>
     // {
     //     cy.contains('All Products').click({force:true})
 
-    //     var productPrice
+    //     var productPrice;
     //     cy.get('.search-cards').each(($e1, index, $list) =>{
     //         if($e1.text().includes('1% Hyaluronic Sunscreen Aqua Gel - 50g')){
     //             productPrice = $e1.find("[class^='price']").text()
@@ -195,11 +195,52 @@ describe('Learning test cases', ()=>
 
 
 
+    // it('Test apply coupon to cart when coupon condition are matched', ()=>
+    // {
 
+    //     var priceAfterApplyCoupon
+    //     var priceBeforeApplyCoupon 
 
-    it('Test apply coupon to cart when coupon condition are matched', ()=>
+    //     cy.contains('All Products').click({force:true})
+    //     var productPrice
+    //     cy.get('.search-cards').each(($e1, index, $list) =>{
+    //         if($e1.text().includes('Sali-Cinamide Anti-Acne Serum with 2% Salicylic Acid & 5% Niacinamide - 30ml')){
+    //             $e1.find('button').click()
+    //         }
+    //     }).then(() =>
+    //     {
+    //         cy.wait(5000)
+    //         cy.get('.cart-icon').click()
+
+    //         // Capture the total price before applying the coupon
+    //         cy.get('.drawer-footer-wrapper .price').then((ele) =>
+    //         {
+    //             priceBeforeApplyCoupon = ele.text()
+    //             priceBeforeApplyCoupon = Number(priceBeforeApplyCoupon.slice(1))
+    //         })
+
+    //         //Apply coupon
+    //         cy.get('.coupon-tray-strip').click()
+    //         cy.get('.coupon-name-apply').each(($e1, index, $list) =>
+    //         {
+    //             if($e1.find('.coupon-name').text() == "REDEEM20"){
+    //                 $e1.find('.coupon-apply').click()
+    //             }
+    //         })
+    //     }).then(()=>
+    //     {
+    //         cy.get('.drawer-footer-wrapper .price').then((ele) =>
+    //         {
+    //             priceAfterApplyCoupon = ele.text()
+    //             priceAfterApplyCoupon = Number(priceAfterApplyCoupon.slice(1))
+    //             expect(priceAfterApplyCoupon).to.lessThan(priceBeforeApplyCoupon)
+    //         })
+    //     })
+    // })
+
+    
+    it('Order placement using COD methods with applied coupon', ()=>
     {
-
         var priceAfterApplyCoupon
         var priceBeforeApplyCoupon 
 
@@ -238,6 +279,8 @@ describe('Learning test cases', ()=>
                 expect(priceAfterApplyCoupon).to.lessThan(priceBeforeApplyCoupon)
             })
         })
+
+
     })
 
 

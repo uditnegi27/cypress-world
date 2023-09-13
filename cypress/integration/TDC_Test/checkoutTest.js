@@ -1,9 +1,9 @@
 /// <reference types= "cypress"/>
 
-import AllProductPage from "../TDC/allProductPage";
-import HomePage from "../TDC/HomePage";
-import Cart from "../TDC/cart"
-import CheckoutPage from "../TDC/checkoutPage";
+import AllProductPage from "../TDC_Pages/allProductPage";
+import HomePage from "../TDC_Pages/HomePage";
+import Cart from "../TDC_Pages/cart"
+import CheckoutPage from "../TDC_Pages/checkoutPage";
 
 describe('checkout page and payment testsuit', () =>
 {

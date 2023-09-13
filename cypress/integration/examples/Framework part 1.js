@@ -16,10 +16,9 @@ describe('Framework ', function() {
             this.data = data
         })
     })
+
     
-
     it('Framework part 1', function() {
-
         const homepage = new HomePage()
         const productpage = new ProductsPage()
         cy.visit('https://rahulshettyacademy.com/angularpractice/')
@@ -28,7 +27,6 @@ describe('Framework ', function() {
         homepage.getPasswordBox().type(this.data.password)
         homepage.getGender().select(this.data.gender)
         homepage.getShopPage().click()
-
 
         this.data.productName.forEach(function(ele) {
             cy.addProduct(ele)
