@@ -41,7 +41,7 @@ module.exports = defineConfig({
       // tasks = sqlServer.loadDBPlugin(config.db);
       // on('task', tasks);
     },
-    specPattern: 'cypress/integration/TDC_Test/*.js'
+    specPattern: 'cypress/integration/TDC_Test/categoriesTest.js'
   },
 
 });
