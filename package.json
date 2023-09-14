@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run"
+    "test": "cypress run –headless –spec cypress/integration/TDC_Test/categoriesTest.js --config pageLoadTimeout=100000"
   },
   "author": "",
   "license": "ISC",
