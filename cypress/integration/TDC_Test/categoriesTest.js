@@ -20,6 +20,7 @@ describe('All categories page test suit', ()=>
         cy.visit('https://thedermaco.com/')
     })
 
+    
     it('open Acne Marks page from home page dropdown section', ()=>
     {
         homePage.getShopByConcernSection().invoke('show')
@@ -99,9 +100,6 @@ describe('All categories page test suit', ()=>
             expect(ele.text()).to.equal('1% Hyaluronic Sunscreen Aqua Gel - 50g');
         })
     })
-
-
-
 
 
 
@@ -317,15 +315,13 @@ describe('All categories page test suit', ()=>
 
 
 
-
-
     it('open Dry & Dull Skin page from home page dropdown section', ()=>
     {
         homePage.getShopByConcernSection().invoke('show')
         homePage.getDryDullSkinPageButton().click({force:true})
     })
 
-    it('open Dry & Dull PLP page products images are visible ?', ()=>
+    it('Dry & Dull PLP page products images are visible ?', ()=>
     {
         homePage.getShopByConcernSection().invoke('show')
         homePage.getSkinRadiancePageButton().click({force:true})
@@ -357,7 +353,6 @@ describe('All categories page test suit', ()=>
             expect(ele.text()).to.equal('1% Collagen Daily Face Serum-Cream with Green Tea & Hyaluronic Acid - 50g');
         })
     })
-
 
 
 
